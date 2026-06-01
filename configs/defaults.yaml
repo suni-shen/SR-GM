@@ -1,0 +1,31 @@
+defaults:
+  # - override hydra/launcher: submitit_slurm
+  - _self_
+data_path: './data/'
+device: 'cuda'
+mode: 'puregpu'
+model_name: 'GCN' 
+dataset: ele-fashion #  books_nc # ele-fashion
+debug: False # set True to print more information
+dis_metric: gond
+seed: 1
+save: True # set True to save the condensed graph
+lr_model : 0.001
+nlayers : 2
+dropout : 0.0 
+hidden: 256
+lambad: 3000
+epochs: 1000
+d_text: 512
+reduction_rate: 0.003
+ablation: False 
+lr_feat: 0.001 
+lr_adj: 0.001 
+runs_eval: 3
+lr_test: 0.003
+batch_size: 512
+feat: 'clip' 
+training: False # True False
+hydra:
+  job:
+    chdir: True
