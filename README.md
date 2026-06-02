@@ -93,4 +93,4 @@ And run the command:
 python sr_mt_ind.py
 ```
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20503552.svg)](https://doi.org/10.5281/zenodo.20503552)
-[DOI:10.5281/zenodo.20503552](https://zenodo.org)](https://doi.org)
+
